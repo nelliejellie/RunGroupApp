@@ -1,0 +1,25 @@
+# ASP.NET Core
+## Build artifacts
+bin/
+obj/
+
+## .NET Core
+# .NET Core build and publish artifacts
+appsettings*.json
+*.pfx
+*.snk
+
+## IDEs and editors
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+*.user
+*.vspscc
+
+## Others
+*.cache
+*.log
+logs/
+wwwroot/dist/

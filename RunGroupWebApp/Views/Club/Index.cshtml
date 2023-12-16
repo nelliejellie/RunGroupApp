@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Club>
+
+<section class="jumbotron text-center">
+    @*  <img alt="Image" src="/img/photo-road.jpg" class="bg-image position-absolute opacity-20" /> *@
+    <div class="container">
+        <h1 class="jumbotron-heading">Clubs</h1>
+        <p class="display-3">Find a running group</p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+    </div>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    @foreach(var item in Model)
+    {
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="@item.Image"/>
+                            <div class="card-body">
+                                <p class="card-text">@item.Title</p>
+                                <p>
+                                    @item.Description
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-body-secondary">@item.ClubCategory</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+        
+    }
+            </div>
+        </div>
+    </div>
+    
+</section>
