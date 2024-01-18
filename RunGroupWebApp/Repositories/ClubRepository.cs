@@ -51,7 +51,8 @@ namespace RunGroupWebApp.Repositories
 
         public bool UpdateClub(Club club)
         {
-            throw new NotImplementedException();
+            _context.Update(club);
+            return Save();
         }
     }
 }
